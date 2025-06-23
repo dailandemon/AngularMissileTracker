@@ -1,0 +1,13 @@
+<google-map
+  height="100vh"
+  width="100%"
+  [center]="center"
+  [zoom]="zoom"
+>
+  <map-marker
+    *ngIf="markerPosition"
+    [position]="markerPosition"
+    [title]="'Missile ' + missileId"
+  >
+  </map-marker>
+</google-map>
